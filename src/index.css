@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --mgr-black: #0a0a0a;
+  --mgr-charcoal: #141414;
+  --mgr-graphite: #1c1c1c;
+  --mgr-gold: #c9a24b;
+  --mgr-gold-light: #e8d08a;
+  --mgr-gold-dark: #9c7a2e;
+  --mgr-ivory: #faf7f0;
+  --mgr-cream: #f1ebdc;
+  --mgr-text: #14110a;
+  --mgr-muted: #6b6455;
+  --mgr-muted-light: #b8b09c;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    background-color: #ffffff;
+    color: var(--mgr-text);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.mgr-gold-text {
+  background: linear-gradient(135deg, #e8d08a 0%, #c9a24b 50%, #9c7a2e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #c9a24b;
+}
+
+.mgr-gold-bg {
+  background: linear-gradient(135deg, #e8d08a 0%, #c9a24b 50%, #9c7a2e 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Kanso Living",
+  "description": "Architectural furniture, lighting, and studio objects featuring a responsive checkout flow and real-time inventory updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
